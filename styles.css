@@ -1,0 +1,571 @@
+/*Stylesheet for my Final Website!*/
+
+
+/*Imported fonts!*/
+
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+
+
+
+
+/*Main Background!*/
+
+body {
+   background: url("../img/profgraybackground.jpg");
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/*RWD - Media Queries / Flexbox!*/
+
+@media screen 
+    and (max-width: 950px)
+    and (min-width: 0px)
+    and (orientation: portrait)
+  
+{
+    .actlike,
+    .polygon {
+        display: none;
+    }
+    
+ .container1 {
+    background: #ffccff;
+    margin: 0 auto;
+    text-decoration: none;
+    display: flex;
+    margin: 0 5%;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+    }
+
+
+
+
+
+
+/*Meta Viewport!*/
+@viewport {
+  width: device-width;
+  zoom: 2;
+}
+
+
+
+
+
+
+
+/*Flexible Embedded Media!*/
+/*
+
+aside section {
+    width: 100%;
+    height: 0;
+}
+
+iframe {
+    position: absolute;
+}*/
+
+
+
+
+
+
+/*  LinkedIn  */
+.LI-profile-badge {
+    text-align: center;
+}
+
+
+
+
+
+/*Header!
+
+header div*/
+
+
+#headerBar {
+    width: 100%;
+    text-align: center;
+}
+ 
+header 
+
+
+
+
+/*More Header!*/
+
+/*
+#headerBar {
+    height: 300px;
+    background-color: #D8D8D8;
+    font-size: 4em;
+}
+*/
+
+
+
+/*
+header section {
+    width: 100%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 1em;
+}
+*/
+
+div {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 6em;
+    padding-top: 30px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+
+.stickman {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.5em;
+    width: 3.5em;
+}
+
+
+
+
+/*Illustrator image!*/
+
+.polygon {
+    fill: #CFC9ED;
+    stroke: #2A3C7E;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    animation: tada 2s infinite;
+}
+
+polygon:hover {
+  fill: #F1E4D5;
+  stroke: #CFC9ED;
+  transition: all .5s;
+}
+
+
+
+
+
+
+
+/*Icon details!*/
+.wine {
+    height: 50px;
+    width: 50px;
+    transform: skewY(-15deg) skewX(20deg);
+}
+
+
+
+
+
+
+/*Nav Bar!*/
+nav section {
+        text-align: center;
+}
+
+
+nav li{
+  display: inline-flex;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: 'Arvo', serif;
+    text-align: center;
+  }
+
+
+ul {
+  text-align: center;
+}
+
+nav a:link{
+  background-color: whitesmoke;
+  text-decoration: none;
+  padding: 1em;
+  transition: all .5s;
+ 
+}
+
+nav a:visited {
+  background-color: whitesmoke;
+       
+}
+
+nav a:hover {
+  background-color: black;
+  margin-left: .5em;
+  color: whitesmoke;
+       
+ 
+}
+
+nav a:hover:before {
+    padding-right: .5em;
+    background: black;
+       
+    
+
+}
+
+nav a:active {
+  background-color: whitesmoke;
+  color: black;
+      
+}
+
+
+
+
+
+
+
+/*Headings!*/
+
+h1 {
+   font-size: 3em;
+   text-align: center;
+  
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+  
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*Paragraphs!*/
+#myname {
+background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); 
+background: linear-gradient(to left, #DECFE3, #CAB4D1); 
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+p2 {
+    font-size: .25em;
+    text-align: center; 
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+/*Images!*/
+
+li {
+  float: center;
+  list-style: none;
+  margin: 5px;
+}
+
+.thumbnails {
+  position: relative;
+  top: -140px;
+  height: 50px;
+}
+
+
+.actlike {
+    height: 200px;
+    width: 300px;
+}
+
+.actual img {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  opacity: 0;
+}
+
+.actual {
+  position: relative;
+}
+
+
+
+
+
+
+
+/*Thumbnails - nth child (from class)!*/
+
+.thumbnails li:nth-child(1) img {
+  border: 5px dotted black;  
+  height: 75px;
+  width: 50px;
+  transform: rotate(-10deg);
+}
+
+.thumbnails li:nth-child(2) img {
+  border: 5px dotted black;
+  height: 75px;
+  width: 50px;
+  transform: rotate(-5deg);
+}
+
+.thumbnails li:nth-child(3) img {
+  border: 5px dotted black; 
+  height: 75px;
+  width: 50px;
+  transform: rotate(8deg);
+}
+
+.thumbnails li:nth-child(4) img {
+  border: 5px dotted black; 
+  height: 75px;
+  width: 50px;
+  transform: rotate(-7deg);
+}
+
+
+
+
+
+
+
+/*Targets(big images)!*/
+
+#actual-1:target, 
+#actual-4:target
+{ border-radius: 30%;
+  border: solid;
+  border-width: 35px 35px 35px 35px;
+  border-image: url(../img/borderswirls.jpg) 100 100 100 100 repeat;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  top: -400px;
+}
+
+#actual-2:target {
+  border-radius: 30%;
+  border: solid;
+  border-width: 35px 35px 35px 35px;
+  border-image: url(../img/borderswirls.jpg) 100 100 100 100 repeat;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: -400px;
+  left: 5px; 
+}
+
+#actual-3:target {
+  border: solid;
+  border-width: 35px 35px 35px 35px;
+  border-image: url(../img/borderswirls.jpg) 100 100 100 100 repeat;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: -400px;
+  left: 5px; 
+}
+
+
+img:target  {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+
+
+
+
+
+
+
+/*More FlexBox Details!*/
+
+.container1 {
+    background: #ffccff;
+    margin: 0 auto;
+    width: 90%;
+    text-decoration: none;
+    display: flex;
+    margin: 0 5%;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+  background: #99ccff;
+  margin: 1%; 
+  padding: 1.6666667%;  
+}
+
+aside {
+    display: flex;
+  background: #cce6ff;
+  margin: 1%; 
+  padding: 2.5%; 
+}
+
+
+
+
+
+
+
+/*Overlay!*/
+
+.overlay {
+  background: #99ccff;
+  text-align: center;
+  display: none;
+}
+
+.overlay:target {
+    background: rgba(9, 14, 30, .8);
+    display: block;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;   
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+.click {
+    height: 200px;
+    width: 200px;
+    left: -25px;
+    position: relative;
+}
+
+.ron {
+    height: 500px;
+    width: 350px;
+}
+
+
+
+
+
+
+
+/* Clearfix! */
+
+.container:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+/*Thumbnail controls!*/
+
+.thumbnails li {
+  float: left;
+  list-style: none;
+  margin: 5px;
+  text-decoration: none;
+  position: relative;
+  top: -235px;
+}
+
+
+
+
+
+
+
+/*Give thumbnails and images space!*/
+
+h3 {
+  clear: left;
+  text-align: center;
+}
+
+
+
+
+
+
+/*Target details!*/
+
+img:target  {
+  opacity: 5;
+  transition: opacity .5s;
+}
+
+
+
+
+
+
+
+/*Animation!*/
+
+@keyframes tada { 
+  0% { 
+    opacity: 0;
+    transform: scale(.5);
+  }
+  
+  50% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+ 
+  100% { 
+  opacity: 2;
+  transform: scale(1);
+  }
+
+}
